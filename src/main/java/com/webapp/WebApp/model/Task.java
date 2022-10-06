@@ -1,10 +1,14 @@
 package com.webapp.WebApp.model;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
 import java.util.Date;
 
 public class Task {
     private Long id;
     private String name;
+
+    @DateTimeFormat(pattern = "dd/MM/yyyy HH:mm:ss")
     private Date date;
 
     public Task (){
